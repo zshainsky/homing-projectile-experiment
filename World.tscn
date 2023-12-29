@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqwr3gvqtsuu"]
+
+[ext_resource type="PackedScene" uid="uid://bs3sy0xau6wnd" path="res://projectile/Projectile.tscn" id="1_yve7l"]
+[ext_resource type="PackedScene" uid="uid://bpisr72bs5f7s" path="res://projectile/ProjectileComposition.tscn" id="2_7owh3"]
+[ext_resource type="PackedScene" uid="uid://v7p0xurrjkmw" path="res://projectile/HomingProjectileComposition.tscn" id="3_81cwt"]
+
+[node name="World" type="Node2D"]
+position = Vector2(191, 99)
+
+[node name="Projectile" parent="." instance=ExtResource("1_yve7l")]
+visible = false
+position = Vector2(80, 164)
+
+[node name="ProjectileComposition" parent="." instance=ExtResource("2_7owh3")]
+position = Vector2(57, 442)
+
+[node name="HomingProjectileComposition" parent="." instance=ExtResource("3_81cwt")]
+position = Vector2(726, 70)

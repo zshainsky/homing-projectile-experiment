@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://v7p0xurrjkmw"]
+
+[ext_resource type="PackedScene" uid="uid://bpisr72bs5f7s" path="res://projectile/ProjectileComposition.tscn" id="1_g4l7g"]
+[ext_resource type="Script" path="res://components/homing_move_component.gd" id="2_2xn4n"]
+
+[node name="HomingProjectileComposition" instance=ExtResource("1_g4l7g")]
+
+[node name="MoveComponent" parent="." index="2"]
+script = ExtResource("2_2xn4n")
